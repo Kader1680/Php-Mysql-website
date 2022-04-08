@@ -1,6 +1,71 @@
+:root{
+    --dark-color: rgb(70, 132, 145);
+    --light-color: white;
+}
+
 body{
     font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    height: 111rem;
+    
+    
+    
+
+    
+    
 }
+.navbar{
+    background-color: var(--dark-color);
+    z-index: 5;
+    position: fixed;
+    width: -webkit-fill-available;
+    margin-top: -21px;
+}
+
+.navbar .navbar-nav .nav-link{
+    color: var(--light-color);
+    
+}
+.content{
+    
+}
+.presentation{
+    background-image: url('../img/hero-bg.jpg');
+    height: 31rem;
+    width: -webkit-fill-available;
+}
+.presentation h1{
+    
+}
+.presentation h2{
+    
+}
+
+.domain .row{
+    margin: 0px auto;
+}
+
+.box{
+    width: 250px;
+    height: 250px;
+    border: 2px solid black;
+    transition: 0.8s;
+}
+.box:hover{
+    background-color: red;
+    color: white;
+    
+}
+.box h6{
+    font-weight: bolder;
+}
+
+
+
+
+
+
+
+
