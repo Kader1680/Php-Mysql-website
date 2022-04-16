@@ -1,5 +1,6 @@
 :root{
-    --dark-color: rgb(70, 132, 145);
+    --red-light:#ffe4e6;
+    --dark-color: #dc3545;
     --light-color: white;
 }
 
@@ -8,12 +9,8 @@ body{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    height: 111rem;
-    
-    
-    
+    height: 250rem;
 
-    
     
 }
 .navbar{
@@ -28,25 +25,32 @@ body{
     color: var(--light-color);
     
 }
-.content{
-    
-}
-.presentation{
-    background-image: url('../img/hero-bg.jpg');
+.Head{
     height: 31rem;
-    width: -webkit-fill-available;
+    background-image: url('../img/hero-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
-.presentation h1{
+.Head .content{
+    margin-top: 9rem;
+}
+.Head .content h1{
     
 }
-.presentation h2{
+.Head .content h2{
+    font-size: 20px;
+}
+.Head .content a{
     
 }
+.Head .content a .iconify{
+    color: var(--dark-color);
+}
+
 
 .domain .row{
-    margin: 0px auto;
+    margin: 40px auto;
 }
-
 .box{
     width: 250px;
     height: 250px;
@@ -54,18 +58,80 @@ body{
     transition: 0.8s;
 }
 .box:hover{
-    background-color: red;
+    background-color: var(--dark-color);
     color: white;
     
 }
 .box h6{
     font-weight: bolder;
 }
+.global h2{
+    
+}
+.global p{
+    
+}
+.About{
+    background-color: #ffe4e6;
+}
 
 
 
+.blog .row{
+    
+}
+.blog .row img{
+    max-width: 100%;
+}
+.images{
+    display: grid;
+    
+}
+.images img{
+    width: 500px;
+}
+
+.number .row .col-3 .square{
+    height: 10rem;
+    background-color: var(--red-light);
+}
+.number .row .col-3 .square span{
+    margin: -18px -20px;
+    border: 3px solid;
+}
 
 
+.Company{
+    
+    background-color: var(--red-light);
+}
 
+.Pricing .blog .row .col-3{
+    height: 20rem;
+}
+.Pricing .blog .row .col-3 span{
+    margin-left: 80px;
+}
+.Pricing .blog .row .col-3 h2{
+    margin-left: 97px;
+}
+.Pricing .blog .row .col-3 p{
+    margin: -33px 125px;
+    font-size: 15px;
+}
 
-
+.Pricing .blog .row .col-3 .des{
+    line-height: 2;
+    font-size: 15px;
+    
+}
+.Pricing .blog .row .col-3 .des{
+    line-height: 2;
+    font-size: 15px;
+    
+}
+.Pricing .blog .row .col-3 button{
+    align-items: center;
+    margin: 14px 81px;
+    
+}
