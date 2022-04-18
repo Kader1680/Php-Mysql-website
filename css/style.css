@@ -1,5 +1,5 @@
 :root{
-    --red-light:#ffe4e6;
+    --red-light:#fff6f7;
     --dark-color: #dc3545;
     --light-color: white;
 }
@@ -138,4 +138,10 @@ body{
 
 .Portfolio .btn-group{
     margin: 0px 490px;
+}
+
+.team{
+    background-color: var(--red-light);
+    padding: 4rem 0rem;
+
 }
