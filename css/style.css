@@ -145,3 +145,49 @@ body{
     padding: 4rem 0rem;
 
 }
+.Contact{
+
+}
+.Contact .data{
+    margin: 40px auto;
+}
+.Contact .data .map iframe{
+    width: 550px;
+    height: 376px;
+}
+.Contact .data .form{
+    padding: 23px 0px;
+    border: 1px solid;
+    margin: 0px 10px;
+}
+.Contact .data form{
+    margin: 0px 35px;
+}
+.Contact .data form input:nth-child(1){
+    width: 14rem;
+}
+.data form input:nth-child(2){
+    width: 14rem;
+}
+.data form input:nth-child(3){
+    width: 469px;
+    margin: 25px 0px;
+}
+.data form input:nth-child(4){
+    width: 467px;
+    height: 129px;
+}
+
+.form form button{
+    padding: 6px 164px;
+    margin: 14px 10px;
+}
+
+.join{
+    background-color: var(--red-light);
+    padding: 60px 0px;
+}
+
+footer{
+    
+}
