@@ -99,8 +99,6 @@ body{
     margin: -18px -20px;
     border: 3px solid;
 }
-
-
 .Company{
     
     background-color: var(--red-light);
@@ -139,7 +137,19 @@ body{
 .Portfolio .btn-group{
     margin: 0px 490px;
 }
+.Portfolio .images{
+    display: grid;
+    grid-template-columns: 80% 0%;
 
+}
+.images .horizontal{
+    grid-column: span 2;
+    
+}
+.images .vertical{
+    grid-row: span 2;
+
+}
 .team{
     background-color: var(--red-light);
     padding: 4rem 0rem;
@@ -188,6 +198,4 @@ body{
     padding: 60px 0px;
 }
 
-footer{
-    
-}
+/* responsive css */
