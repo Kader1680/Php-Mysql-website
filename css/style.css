@@ -3,15 +3,12 @@
     --dark-color: #dc3545;
     --light-color: white;
 }
-
 body{
     font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     height: 250rem;
-
-    
 }
 .navbar{
     background-color: var(--dark-color);
@@ -49,12 +46,12 @@ body{
 
 
 .domain .row{
-    margin: 40px auto;
+    margin: 40px 67px;
+    
 }
-.box{
-    width: 250px;
-    height: 250px;
-    border: 2px solid black;
+.domain .row .box{
+    width: 261px;
+    height: 196px;
     transition: 0.8s;
 }
 .box:hover{
@@ -73,9 +70,20 @@ body{
 }
 .About{
     background-color: #ffe4e6;
+    padding: 70px 117px;
+    background-color: #ffe4e6;
+    left: -49px;
 }
-
-
+.Service .fields .row .single_field{
+    padding: 80px 0px;
+    width: 349px;
+    transition: 0.8s;
+    border: 1px solid;
+}
+.single_field:hover{
+    background-color: var(--dark-color);
+    color: white;
+}
 
 .blog .row{
     
@@ -103,7 +111,6 @@ body{
     
     background-color: var(--red-light);
 }
-
 .Pricing .blog .row .col-3{
     height: 20rem;
 }
@@ -152,7 +159,8 @@ body{
 }
 .team{
     background-color: var(--red-light);
-    padding: 4rem 0rem;
+    padding: 4rem 110px;
+
 
 }
 .Contact{
@@ -199,3 +207,108 @@ body{
 }
 
 /* responsive css */
+
+/* @media(min-width: 992px){
+    .Company .row{
+    width: 81rem;
+    padding: 0px 33px;
+} */
+
+/* $grid-breakpoints: (
+    xs: 0,
+    sm: 576px,
+    md: 768px,
+    lg: 992px,
+    xl: 1200px,
+    xxl: 1400px
+
+    -----------------------------
+
+    // Source mixins
+
+// No media query necessary for xs breakpoint as it's effectively `@media (min-width: 0) { ... }`
+@include media-breakpoint-up(sm) { ... }
+@include media-breakpoint-up(md) { ... }
+@include media-breakpoint-up(lg) { ... }
+@include media-breakpoint-up(xl) { ... }
+@include media-breakpoint-up(xxl) { ... }
+
+// Usage
+
+// Example: Hide starting at `min-width: 0`, and then show at the `sm` breakpoint
+.custom-class {
+  display: none;
+}
+@include media-breakpoint-up(sm) {
+  .custom-class {
+    display: block;
+  }
+}
+); */
+
+/* @media (min-width: 576px) { ... }
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+// X-Large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+
+// XX-Large devices (larger desktops, 1400px and up)
+@media (min-width: 1400px) { ... } */
+
+
+/* --------- XS ----------- */
+@media (max-width: 375px) { 
+
+    .navbar{
+        background-color: green;
+
+    }
+    .row{
+        border-radius: 8px;
+        width: 296px;
+        font-size: 17px;
+        margin: 0px -23px;
+    }
+    .domain .row .box{
+        border-radius: 8px;
+        width: 296px;
+        font-size: 17px;
+        margin: 0px -23px;
+    }
+    .team{
+
+    }
+    .team .row{
+
+    }
+    .row .team_field{
+
+    }
+
+    }
+
+
+    /* ------ comapany ----- */
+    .Company .row div img{
+        width: 22px;
+        height: 22px;
+    }
+
+
+/* --------- MD ----------- */
+
+@media (min-width: 768px) { 
+    .domain .row .box{
+        border-radius: 8px;
+        width: 296px;
+        font-size: 17px;
+        margin: 0px -23px;
+    }
+ }
+
+
