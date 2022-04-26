@@ -342,6 +342,14 @@ body{
 
 /* --------- MD ----------- */
 
+@media (min-width: 576px) { 
+    .navbar{
+        background-color: navy;
+    }
+
+}
+
+
 @media (min-width: 768px) { 
     .domain .row .box{
         border-radius: 8px;
@@ -351,16 +359,8 @@ body{
     }
 }
 
-@media (min-width: 576px) { 
 
 
-}
-
-
-@media (min-width: 768px) { 
-
-
-}
 
 
 @media (min-width: 992px) { 
