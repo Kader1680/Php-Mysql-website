@@ -250,12 +250,12 @@ body{
 
 
 /* --------- XS ----------- */
-/* @media (max-width: 375px) { 
+@media (max-width: 375px) { 
 
     
 
     .navbar{
-        background-color: green;
+        background-color: blue;
 
     }
     .row{
@@ -330,7 +330,7 @@ body{
         width: 12rem;
     }
 
-    } */
+    }
 
 
     /* ------ comapany ----- */
@@ -341,7 +341,7 @@ body{
 
 
 /* --------- MD ----------- */
-@media (max-width: 575.98px) { 
+/* @media (max-width: 575.98px) { 
     .navbar{
         background-color: green;
 
@@ -415,7 +415,7 @@ body{
         background-color: yellow;
         width: 12rem;
     }
- }
+ } */
 
 
 
