@@ -341,7 +341,7 @@ body{
 
 
 /* --------- MD ----------- */
-/* @media (max-width: 575.98px) { 
+@media (max-width: 575.98px) { 
     .navbar{
         background-color: green;
 
@@ -426,7 +426,7 @@ body{
         font-size: 17px;
         margin: 0px -23px;
     }
-} */
+}
 
 
 
