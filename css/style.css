@@ -341,13 +341,81 @@ body{
 
 
 /* --------- MD ----------- */
-
-@media (max-width: 576px) { 
+@media (max-width: 575.98px) { 
     .navbar{
-        background-color: navy;
-    }
+        background-color: green;
 
-}
+    }
+    .row{
+        border-radius: 8px;
+        width: 296px;
+        font-size: 17px;
+        margin: 0px -23px;
+    }
+    .domain{
+        margin: 0px -16px;
+    }
+    .domain .row .box{
+        
+        margin: 0px 86px;
+    }
+    .About{
+        padding: 53px 0px;
+    }
+    .About .blog{
+        
+    }
+    .About .blog .row .col-lg-6 img{
+        margin: 17px 146px;
+    }
+    .About .blog .row .text{
+        margin: 0px 29px;
+        font-weight: bolder;
+    }
+    .row .text .mide{
+        font-size: 16px;
+        font-weight: 100;
+    }
+    .row .text .mide .image div{
+        
+    }
+    .row .text .mide .text h4{
+        margin: 0px -30px;
+        margin-bottom: 10px;
+    }
+    .row .text .mide .text p{
+        width: 17rem;
+        margin: 0px -31px;
+    }
+    .team{
+        width: 529px;
+        margin: 0px -172px;
+    }
+    
+    .Contact .data .map iframe {
+        margin: 0px -28px;
+        width: 309px;
+        height: 393px;
+    }
+    .Contact .data .form {
+        
+    }
+    .Contact .data .form form input:nth-child(1){
+        background-color: red;
+    }
+    .Contact .data .form form input:nth-child(2){
+        background-color: blue;
+    }
+    .Contact .data .form form input:nth-child(3){
+        background-color: green;
+        width: 12rem;
+    }
+    .Contact .data .form form input:nth-child(4){
+        background-color: yellow;
+        width: 12rem;
+    }
+ }
+
 
 
 @media (min-width: 768px) { 
