@@ -1,6 +1,6 @@
 :root{
-    --red-light:#fff6f7;
-    --dark-color: #dc3545;
+    --red-light:#b0ffde;
+    --dark-color: #37be86;
     --light-color: white;
 }
 body{
@@ -44,7 +44,10 @@ body{
     color: var(--dark-color);
 }
 
-
+.domain{
+    
+    
+}
 .domain .row{
     margin: 40px 67px;
     
@@ -69,9 +72,8 @@ body{
     
 }
 .About{
-    background-color: #ffe4e6;
+    background-color: var(--red-light);
     padding: 70px 117px;
-    background-color: #ffe4e6;
     left: -49px;
 }
 .Service .fields .row .single_field{
@@ -250,7 +252,7 @@ body{
 
 
 /* --------- XS ----------- */
-@media (max-width: 375px) { 
+/* @media (max-width: 375px) { 
 
     
 
@@ -330,7 +332,7 @@ body{
         width: 12rem;
     }
 
-    }
+    } */
 
 
     /* ------ comapany ----- */
@@ -341,9 +343,9 @@ body{
 
 
 /* --------- MD ----------- */
-/* @media (max-width: 575.98px) { 
+@media (max-width: 575.98px) { 
     .navbar{
-        background-color: green;
+        background-color: rgb(190, 190, 190);
 
     }
     .row{
@@ -415,7 +417,7 @@ body{
         background-color: yellow;
         width: 12rem;
     }
- } */
+ }
 
 
 
