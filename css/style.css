@@ -343,7 +343,7 @@ body{
 
 
 /* --------- MD ----------- */
-@media (max-width: 412px) { 
+@media (max-width: 414px) { 
     .navbar{
         background-color: rgb(90, 45, 137);
 
@@ -353,7 +353,7 @@ body{
         background-image: url('../img/hero-bg.jpg');
         background-repeat: no-repeat;
         background-size: cover;
-        width: 600px;
+        width: 602px;
     }
     .Head .content{
         margin-top: 9rem;
