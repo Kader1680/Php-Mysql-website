@@ -374,14 +374,14 @@ body{
         border-radius: 8px;
         width: 296px;
         font-size: 17px;
-        margin: 0px -23px;
+        
     }
     .domain{
         margin: 0px -16px;
     }
     .domain .row .box{
-        
-        margin: 0px 86px;
+        width: 22rem;
+        margin: 0px 110px;
     }
     .About{
         padding: 53px 0px;
@@ -391,7 +391,9 @@ body{
         
     }
     .About .blog .row .col-lg-6 img{
-        margin: 17px 60px;
+        margin: 78px 305px;
+        width: 32rem;
+        position: absolute;
     }
     .About .blog .row .text{
         margin: 0px 29px;
@@ -413,9 +415,52 @@ body{
         margin: 0px -31px;
     }
     .team{
-        width: 529px;
-        margin: 0px -61px;
+        width: 602px;
+        margin: 0px 10px;
 
+    }
+    .Pricing{
+        margin: 0px 113px;
+    }
+    .Pricing .blog{
+        margin: 0px 52px;
+    }
+    .Pricing .blog .row .col-3 button{
+        align-items: center;
+        margin: 14px 81px;
+        
+    }
+    .Contact{
+        margin: 50px 100px;
+    }
+    .Contact .data{
+        margin: 40px auto;
+    }
+    .Contact .data .map iframe{
+        width: 550px;
+        height: 376px;
+    }
+    .Contact .data .form{
+        padding: 23px 0px;
+        border: 1px solid;
+        margin: 0px 10px;
+    }
+    .Contact .data form{
+        margin: 0px 35px;
+    }
+    .Contact .data form input:nth-child(1){
+        width: 14rem;
+    }
+    .data form input:nth-child(2){
+        width: 14rem;
+    }
+    .data form input:nth-child(3){
+        width: 469px;
+        margin: 25px 0px;
+    }
+    .data form input:nth-child(4){
+        width: 467px;
+        height: 129px;
     }
     
     .Contact .data .map iframe {
