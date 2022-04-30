@@ -343,10 +343,32 @@ body{
 
 
 /* --------- MD ----------- */
-@media (max-width: 575.98px) { 
+@media (max-width: 375px) { 
     .navbar{
         background-color: rgb(190, 190, 190);
 
+    }
+    .Head{
+        height: 31rem;
+        background-image: url('../img/hero-bg.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 35rem;
+    }
+    .Head .content{
+        margin-top: 9rem;
+    }
+    .Head .content h1{
+        
+    }
+    .Head .content h2{
+        font-size: 20px;
+    }
+    .Head .content a{
+        
+    }
+    .Head .content a .iconify{
+        color: var(--dark-color);
     }
     .row{
         border-radius: 8px;
@@ -363,12 +385,13 @@ body{
     }
     .About{
         padding: 53px 0px;
+        margin: 0px -205px;
     }
     .About .blog{
         
     }
     .About .blog .row .col-lg-6 img{
-        margin: 17px 146px;
+        margin: 17px 60px;
     }
     .About .blog .row .text{
         margin: 0px 29px;
