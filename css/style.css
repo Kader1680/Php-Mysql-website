@@ -1,10 +1,12 @@
 :root{
-    --red-light:#b0ffde;
+    --green-light:#b0ffde;
     --dark-color: #37be86;
     --light-color: white;
+    --font-family: 'Roboto', sans-serif;
+    
 }
 body{
-    font-family: 'Roboto', sans-serif;
+    font-family: var(--font-family);
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -44,7 +46,8 @@ body{
     color: var(--dark-color);
 }
 
-.domain{
+/* domain section */
+.domain {
     
     
 }
@@ -53,9 +56,13 @@ body{
     
 }
 .domain .row .box{
-    width: 261px;
-    height: 196px;
+    border-radius: 8px;
+    width: 240px;
+    height: 240px;
+    margin: 0px 43px;
     transition: 0.8s;
+    font-size: 17px;
+    cursor: pointer;
 }
 .box:hover{
     background-color: var(--dark-color);
@@ -65,30 +72,31 @@ body{
 .box h6{
     font-weight: bolder;
 }
-.global h2{
-    
-}
-.global p{
-    
-}
+
+/* Abou section */
 .About{
-    background-color: var(--red-light);
+    background-color: var(--green-light);
     padding: 70px 117px;
     left: -49px;
+}
+
+.About h2 span{
+    color: var(--dark-color);
+}
+.About .blog .row .text .mide .image span{
+    background-color: var(--dark-color);
 }
 .Service .fields .row .single_field{
     padding: 80px 0px;
     width: 349px;
     transition: 0.8s;
     border: 1px solid;
+    cursor: pointer;
+
 }
 .single_field:hover{
     background-color: var(--dark-color);
     color: white;
-}
-
-.blog .row{
-    
 }
 .blog .row img{
     max-width: 100%;
@@ -100,18 +108,38 @@ body{
 .images img{
     width: 500px;
 }
+/* Progress section */
+
+.Progress {
+    
+    margin: 60px auto;
+}
+
+.Progress .row .col-lg-6 .progress .progress-bar{
+    background-color: var(--dark-color);
+    
+}
+
+/* Number section */
+
 
 .number .row .col-3 .square{
     height: 10rem;
-    background-color: var(--red-light);
+    background-color: var(--green-light);
 }
-.number .row .col-3 .square span{
+.number .row .col-lg-3 .square span{
     margin: -18px -20px;
     border: 3px solid;
+    background-color: var(--dark-color);
+    
+    
 }
+
+/* Company section */
 .Company{
     
-    background-color: var(--red-light);
+    background-color: var(--green-light);
+    margin: 12px 0px;
 }
 .Pricing .blog .row .col-3{
     height: 20rem;
@@ -143,6 +171,21 @@ body{
     
 }
 
+/* Service section */
+
+.Service h2 span{
+    color: var(--dark-color);
+}
+.Service .fields .row .single_field span{
+    color: var(--dark-color);
+}
+.Service .fields .row .single_field span:hover{
+    color: var(--dark-color);
+}
+.Service .fields .row .single_field:hover{
+    background-color: var(--dark-color);
+    color: var(--green-light);
+}
 .Portfolio .btn-group{
     margin: 0px 490px;
 }
@@ -159,15 +202,57 @@ body{
     grid-row: span 2;
 
 }
+/* Team section */
+.team h2 span{
+    color: var(--dark-color);
+}
 .team{
-    background-color: var(--red-light);
+    background-color: var(--green-light);
     padding: 4rem 110px;
-
-
 }
-.Contact{
 
+/* Pricing section  */
+.Pricing{
+    margin: 60px auto;
 }
+
+.Pricing h2 span{
+    color: var(--dark-color);
+}
+.Pricing .blog .row .col-lg-3{
+    height: 23rem;
+}
+.Pricing .blog .row .col-lg-3 span{
+    color: var(--dark-color);
+    font-size: 21px;
+}
+.Pricing .blog .row .col-lg-3 h2{
+    color: var(--dark-color);
+    font-size: 40px;
+    margin: 0px 20px;
+}
+.Pricing .blog .row .col-lg-3 p{
+    font-size: 17px;
+    margin: -28px 71px;
+}
+.Pricing .blog .row .col-lg-3 button{
+    background-color: var(--dark-color);
+    color: white;
+    margin: 30px 53px;
+    padding: 9px 42px;
+    width: 176px;
+}
+
+/* Contact section */
+.Contact h2 span{
+    color: var(--dark-color);
+}
+
+.Contact .blog .row .col-lg-4 span{
+    color: var(--dark-color);
+}
+
+
 .Contact .data{
     margin: 40px auto;
 }
@@ -201,139 +286,33 @@ body{
 .form form button{
     padding: 6px 164px;
     margin: 14px 10px;
+    background-color: var(--dark-color);
 }
 
+/* Join section */
 .join{
-    background-color: var(--red-light);
+    background-color: var(--green-light);
+    padding: 60px 0px;
+}
+.join form button{
+    background-color: var(--dark-color);
+}
+/* Network section */
+
+.network{
+    
     padding: 60px 0px;
 }
 
-/* responsive css */
 
-/* @media(min-width: 992px){
-    .Company .row{
-    width: 81rem;
-    padding: 0px 33px;
-} */
+/* footer section  */
 
-/* $grid-breakpoints: (
-    xs: 0,
-    sm: 576px,
-    md: 768px,
-    lg: 992px,
-    xl: 1200px,
-    xxl: 1400px
-
-    -----------------------------
-
-    // Source mixins
-
-// No media query necessary for xs breakpoint as it's effectively `@media (min-width: 0) { ... }`
-@include media-breakpoint-up(sm) { ... }
-@include media-breakpoint-up(md) { ... }
-@include media-breakpoint-up(lg) { ... }
-@include media-breakpoint-up(xl) { ... }
-@include media-breakpoint-up(xxl) { ... }
-
-// Usage
-
-// Example: Hide starting at `min-width: 0`, and then show at the `sm` breakpoint
-.custom-class {
-  display: none;
+footer{
+    background-color: var(--dark-color);
 }
-@include media-breakpoint-up(sm) {
-  .custom-class {
-    display: block;
-  }
+footer p{
+    margin-top: 18px;
 }
-); */
-
-
-
-
-/* --------- XS ----------- */
-/* @media (max-width: 375px) { 
-
-    
-
-    .navbar{
-        background-color: blue;
-
-    }
-    .row{
-        border-radius: 8px;
-        width: 296px;
-        font-size: 17px;
-        margin: 0px -23px;
-    }
-    .domain{
-        margin: 0px -16px;
-    }
-    .domain .row .box{
-        border-radius: 8px;
-        width: 296px;
-        font-size: 17px;
-        margin: 0px -23px;
-    }
-    .About{
-        padding: 53px 0px;
-    }
-    .About .blog{
-        
-    }
-    .About .blog .row .col-lg-6 img{
-        width: 301px;
-        margin: 0px 46px;
-    }
-    .About .blog .row .text{
-        margin: 0px 29px;
-        font-weight: bolder;
-    }
-    .row .text .mide{
-        font-size: 16px;
-        font-weight: 100;
-    }
-    .row .text .mide .image div{
-        
-    }
-    .row .text .mide .text h4{
-        margin: 0px -30px;
-        margin-bottom: 10px;
-    }
-    .row .text .mide .text p{
-        width: 17rem;
-        margin: 0px -31px;
-    }
-    .team{
-        width: 529px;
-        margin: 0px -172px;
-    }
-    
-    .Contact .data .map iframe {
-        margin: 0px -28px;
-        width: 309px;
-        height: 393px;
-    }
-    .Contact .data .form {
-        
-    }
-    .Contact .data .form form input:nth-child(1){
-        background-color: red;
-    }
-    .Contact .data .form form input:nth-child(2){
-        background-color: blue;
-    }
-    .Contact .data .form form input:nth-child(3){
-        background-color: green;
-        width: 12rem;
-    }
-    .Contact .data .form form input:nth-child(4){
-        background-color: yellow;
-        width: 12rem;
-    }
-
-    } */
-
 
     /* ------ comapany ----- */
     .Company .row div img{
@@ -472,7 +451,7 @@ body{
         
     }
     .Contact .data .form form input:nth-child(1){
-        background-color: red;
+        background-color: green;
     }
     .Contact .data .form form input:nth-child(2){
         background-color: blue;
@@ -489,15 +468,10 @@ body{
 
 
 
-@media (min-width: 768px) { 
-    .domain .row .box{
-        border-radius: 8px;
-        width: 296px;
-        font-size: 17px;
-        margin: 0px -23px;
-    }
+/* @media (min-width: 768px) { 
+    
 }
-
+ */
 
 
 
