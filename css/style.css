@@ -430,7 +430,10 @@ footer p{
         margin: 0px 10px;
     }
     .Contact .data form{
+        
         margin: 0px 35px;
+        display: grid;
+        grid-template-columns: 57% 50%;
     }
     .Contact .data form input:nth-child(1){
         width: 14rem;
@@ -453,7 +456,8 @@ footer p{
         height: 393px;
     }
     .Contact .data .form {
-        
+        width: 35rem;
+        margin: 0px -141px;
     }
     .Contact .data .form form input:nth-child(1){
         background-color: green;
@@ -463,17 +467,27 @@ footer p{
     }
     .Contact .data .form form input:nth-child(3){
         background-color: green;
-        width: 12rem;
+        width: 29rem; 
+        height: 40px;
     }
     .Contact .data .form form input:nth-child(4){
         background-color: yellow;
-        width: 12rem;
+        width: 29rem;
+        margin-top: 84px;
+        margin-left: -241px;
+    }
+    .Contact .data .form form button{
+        width: 28rem;
     }
 
     /* Join section */
 .join{
     background-color: var(--green-light);
     padding: 60px 0px;
+    width: 614px;
+}
+.join form input{
+    width: 15rem;
 }
 .join form button{
     background-color: var(--dark-color);
