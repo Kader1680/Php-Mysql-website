@@ -362,6 +362,11 @@ footer p{
         width: 22rem;
         margin: 0px 110px;
     }
+
+    .domain .row .box .col-lg-3{
+        width: 22rem;
+        margin: 0px 110px;
+    }
     .About{
         padding: 53px 0px;
         margin: 0px -205px;
@@ -464,6 +469,45 @@ footer p{
         background-color: yellow;
         width: 12rem;
     }
+
+    /* Join section */
+.join{
+    background-color: var(--green-light);
+    padding: 60px 0px;
+}
+.join form button{
+    background-color: var(--dark-color);
+}
+/* Network section */
+
+.network{
+    
+    padding: 60px 0px;
+}
+.network .row{
+    
+    display: grid;
+    grid-template-columns: 88% 83%;
+    margin: 0px 4rem;
+}
+.network .row .col-lg-3{
+    
+    
+}
+.network{
+    
+    padding: 60px 0px;
+}
+
+/* footer section  */
+
+footer{
+    background-color: var(--dark-color);
+    width: 614px;
+}
+footer p{
+    margin-top: 18px;
+}
  }
 
 
