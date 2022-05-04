@@ -360,20 +360,31 @@ footer p{
         margin: 0px 13rem;
     }
     .domain .row .box{
-        width: 38rem;
-        margin: 0px 22px;
+        background-color: bisque;
+        width: 87rem;
+        margin: 21px -12rem;
     }
 
     .domain .row .box .col-lg-3{
         width: 22rem;
         margin: 0px 110px;
     }
+    /* ------------------------- */
+    /* About section */
     .About{
+        width: 77.8rem;
         padding: 53px 0px;
         margin: 0px -205px;
     }
     .About .blog{
         
+    }
+    .About .blog .row{
+        
+    }
+    .About .blog .row .col-lg-6{
+        display: grid;
+    
     }
     .About .blog .row .col-lg-6 img{
         margin: 78px 305px;
@@ -381,8 +392,9 @@ footer p{
         position: absolute;
     }
     .About .blog .row .text{
-        margin: 0px 29px;
+        margin: 0px 16rem;
         font-weight: bolder;
+        grid-template-columns: 307%;
     }
     .row .text .mide{
         font-size: 16px;
@@ -399,6 +411,13 @@ footer p{
         width: 17rem;
         margin: 0px -31px;
     }
+
+
+
+
+
+
+    /* ------------------------- */
     /* Progress section */
     .Progress{
         width: 53rem;
@@ -410,6 +429,25 @@ footer p{
         display: grid;
 
     }
+    .Progress .row .col-lg-6{
+        
+        width: 100rem;
+        margin: 15px -19rem;
+
+
+    }
+    .Progress .row .col-lg-6 .progress{
+        
+
+    }
+    .Progress .row .col-lg-6 .progress .progress-bar{
+        
+
+    }
+
+
+
+    /* ------------------------- */
     /* number section */
     .number{
         width: 53rem;
