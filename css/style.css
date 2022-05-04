@@ -324,7 +324,7 @@ footer p{
 /* --------- MD ----------- */
 @media (max-width: 414px) { 
     .navbar{
-        background-color: rgb(90, 45, 137);
+        background-color: var(--dark-color);
 
     }
     .Head{
@@ -360,7 +360,7 @@ footer p{
         margin: 0px 13rem;
     }
     .domain .row .box{
-        background-color: bisque;
+        background-color: wheat;
         width: 87rem;
         margin: 21px -12rem;
     }
@@ -378,6 +378,7 @@ footer p{
     }
     .About .blog{
         
+        padding-top: 32rem;
     }
     .About .blog .row{
         
@@ -387,8 +388,7 @@ footer p{
     
     }
     .About .blog .row .col-lg-6 img{
-        margin: 78px 305px;
-        width: 32rem;
+        margin: -28rem 260px;
         position: absolute;
     }
     .About .blog .row .text{
@@ -460,13 +460,14 @@ footer p{
     }
     
     .number .row .col-lg-3{
-        margin: 1px 16rem;
+        
 
     }
     .number .row .col-lg-3 .square{
-        width: 28rem;
-        
-        margin: -2px -180px;
+        border: 1px solid var(--dark-color);
+        width: 61rem;
+        margin-left: -7rem;
+        margin-bottom: 4rem;
         height: 12rem;
 
     }
