@@ -445,8 +445,6 @@ footer p{
 
     }
 
-
-
     /* ------------------------- */
     /* number section */
     .number{
@@ -464,16 +462,17 @@ footer p{
 
     }
     .number .row .col-lg-3 .square{
-        border: 1px solid var(--dark-color);
+        border: 1px solid #37be86;
         width: 61rem;
         margin-left: -7rem;
         margin-bottom: 4rem;
         height: 12rem;
 
     }
+    /* ------------------------- */
     /* Company section */
     .Company{
-        width: 53rem;
+        width: 65rem;
 
     }
     
@@ -483,11 +482,24 @@ footer p{
     }
     .Company .row .col-lg-2 img{
         width: 28rem;
-        margin: -3px -123px;
+        margin: 1px -35px;
         height: 12rem;
 
     }
+
+
+
+
+    /* ------------------------- */
     /* Service section */
+    .Service{
+        
+
+    }
+    .Service .text-center{
+        
+
+    }
     .Service .fields{
         
 
@@ -498,24 +510,42 @@ footer p{
 
     }
     .Service .fields .row .single_field{
-        width: 40rem;
+        width: 65rem;
+        margin: 1px -5rem;
+        border: 1px solid var(--dark-color);
+
+    }
+    /* galerie section */
+    .galerie{
+        
+
+    }
+    .galerie .carousel-inner{
+        
+
+    }
+    .galerie .carousel-inner .carousel-item{
+
+    }
+    .galerie .carousel-inner .carousel-item img{
 
     }
     /* team section */
     .team{
-        width: 602px;
-        margin: 0px 8rem;
+        width: 61rem;
+        margin: 16px 2rem;
 
     }
     
     .team .row .col-lg-3{
-        margin: 0px -60px;
+        margin: 0px -36px;
 
     }
     .team .row .col-lg-3 img{
-        width: 32rem;
-        height: 33rem;
-        margin: 0px -104px;
+        width: 58rem;
+        height: 45rem;
+        margin: -11px -154px;
+}
 
     }
     .team .row .col-lg-3 .title{
@@ -527,47 +557,64 @@ footer p{
         
 
     }
+    /* Pricing section  */
     .Pricing{
         margin: 0px 113px;
     }
     .Pricing .blog{
         margin: 0px 52px;
     }
-    
-    .Pricing .blog .row .col-3 button{
-        align-items: center;
-        margin: 14px 81px;
+    .Pricing .blog .row{
+        
+        display: grid;
+    }
+    .Pricing .blog .row .col-lg-3 {
+        background-color: antiquewhite;
+        width: 76rem;
+        margin: 0px -8rem;
         
     }
+    .Pricing .blog .row .col-lg-3 button{
+        
+        width: 51rem;
+    }
+    /* contact section */
     .Contact{
         margin: 50px 100px;
     }
     .Contact .blog{
         
     }
-    .Contact .blog .row{
-        /* margin: 0px 45px; */
-        display: grid;
+    .Contact .blog .data{
+
+    }
+    .Contact .blog .data .row{
+
+    }
+    .Contact .blog .data .row .col-lg-6 .map iframe{
 
     }
     .Contact .blog .row .col-lg-4:nth-child(1){
-        background-color: blue;
-        width: 40rem;
+        border: 1px solid var(--dark-color);
+        width: 68rem;
         height: 15rem;
         padding: 60px 6px;
+        margin: 31px -4rem;
     }
     .Contact .blog .row .col-lg-4:nth-child(2){
-        background-color: red;
-        width: 40rem;
+        border: 1px solid var(--dark-color);
+        width: 68rem;
         height: 15rem;
         padding: 60px 6px;
+        margin: 31px -4rem;
         
     }
     .Contact .blog .row .col-lg-4:nth-child(3){
-        background-color: green;
-        width: 40rem;
+        border: 1px solid var(--dark-color);
+        width: 68rem;
         height: 15rem;
         padding: 60px 6px;
+        margin: 31px -4rem;
         
     }
     .Contact .data{
@@ -677,5 +724,5 @@ footer{
 footer p{
     margin-top: 18px;
 }
-}
+
 
