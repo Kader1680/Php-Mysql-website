@@ -457,24 +457,34 @@ footer p{
     /* ------------------------- */
     /* About section */
     .About{
+        height: 180rem;
         width: 77.8rem;
         padding: 53px 0px;
         margin: 0px -205px;
+    }
+    .About h2 {
+        font-size: 3rem;
+        margin-left: 10rem;
+    }
+    .About p{
+        margin-left: 10rem;
+        font-size: 1.5rem;
     }
     .About .blog{
         
         padding-top: 32rem;
     }
     .About .blog .row{
-        
+        display: grid;
     }
     .About .blog .row .col-lg-6{
         display: grid;
     
     }
     .About .blog .row .col-lg-6 img{
+        width: 57.5rem;
         margin: -28rem 260px;
-        position: absolute;
+        position: inherit;
     }
     .About .blog .row .text{
         margin: 0px 16rem;
@@ -515,14 +525,14 @@ footer p{
 
     }
     .Progress .row .col-lg-6{
-        
+        font-size: 3rem;
         width: 100rem;
         margin: 15px -19rem;
 
 
     }
     .Progress .row .col-lg-6 .progress{
-        
+        height: 3rem;
 
     }
     .Progress .row .col-lg-6 .progress .progress-bar{
@@ -547,11 +557,24 @@ footer p{
 
     }
     .number .row .col-lg-3 .square{
-        border: 1px solid #37be86;
+        border: 8px solid #37be86;
         width: 61rem;
         margin-left: -7rem;
         margin-bottom: 4rem;
-        height: 12rem;
+        height: 19rem;
+        padding: 82px 0px;
+    }
+    .number .row .col-lg-3 .square span{
+        font-size: 7rem;
+        margin-top: -9rem;
+        margin-left: -4rem;
+    }
+    .number .row .col-lg-3 .square h2{
+        font-size: 4rem;
+
+    }
+    .number .row .col-lg-3 .square p{
+        font-size: 3rem;
 
     }
     /* ------------------------- */
