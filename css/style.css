@@ -389,7 +389,10 @@ footer p{
 @media (max-width: 414px) { 
     .navbar{
         background-color: var(--dark-color);
-
+        height: 8rem;
+    }
+    .navbar .container .navbar-brand{
+        font-size: 3rem;
     }
     .Head{
         height: 31rem;
@@ -398,17 +401,22 @@ footer p{
         background-size: cover;
         width: 65rem;
     }
-    .Head .content{
+    .Head .container{
         margin-top: 9rem;
     }
-    .Head .content h1{
-        
+    .Head .container h1{
+        font-size: 4rem;
     }
-    .Head .content h2{
-        font-size: 20px;
+    .Head .container h2{
+        font-size: 31px;
     }
-    .Head .content a{
-        
+    .Head .container button{
+        margin: 37px 6px;
+    }    
+    .Head .container a span{
+        font-size: 2.2rem;
+        margin: 16px 0px;
+        margin-top: 18px;
     }
     .Head .content a .iconify{
         color: var(--dark-color);
@@ -427,11 +435,24 @@ footer p{
         background-color: wheat;
         width: 87rem;
         margin: 21px -12rem;
+        height: 19rem;
     }
 
     .domain .row .box .col-lg-3{
         width: 22rem;
         margin: 0px 110px;
+    }
+    .domain .row .box span{
+        font-size: 4rem;
+
+    }
+    .domain .row .box h6{
+        font-size: 3rem;
+        font-weight: bolder;
+    }
+    .domain .row .box  p{
+        
+        font-size: 2rem;
     }
     /* ------------------------- */
     /* About section */
