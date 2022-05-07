@@ -487,6 +487,7 @@ footer p{
         position: inherit;
     }
     .About .blog .row .text{
+        display: none;
         margin: 0px 16rem;
         font-weight: bolder;
         grid-template-columns: 307%;
@@ -604,8 +605,15 @@ footer p{
         
 
     }
-    .Service .text-center{
-        
+    .Service h2{
+        width: 33rem;
+        font-size: 4rem;
+        margin-left: 16rem;
+
+    }
+    .Service p{
+        font-size: 1.5rem;
+        margin-left: 10rem;
 
     }
     .Service .fields{
@@ -619,8 +627,23 @@ footer p{
     }
     .Service .fields .row .single_field{
         width: 65rem;
-        margin: 1px -5rem;
-        border: 1px solid var(--dark-color);
+        margin: 37px -5rem;
+        border: 8px solid var(--dark-color);
+
+    }
+    .Service .fields .row .single_field span{
+        font-size: 7rem;
+        
+
+    }
+    .Service .fields .row .single_field h6{
+        font-size: 4rem;
+        
+
+    }
+    .Service .fields .row .single_field p{
+        font-size: 2rem;
+        
 
     }
     /* galerie section */
@@ -651,7 +674,7 @@ footer p{
     }
     .team .row .col-lg-3 img{
         width: 58rem;
-        height: 45rem;
+        height: 58rem;
         margin: -11px -154px;
 }
 
@@ -669,6 +692,15 @@ footer p{
     .Pricing{
         margin: 0px 113px;
     }
+    .Pricing h2{
+        margin-left: 9rem;
+        font-size: 4rem;
+    }
+    .Pricing p{
+        width: 31rem;
+        margin-top: 2rem;
+        font-size: 1.5rem;
+    }
     .Pricing .blog{
         margin: 0px 52px;
     }
@@ -679,16 +711,50 @@ footer p{
     .Pricing .blog .row .col-lg-3 {
         background-color: antiquewhite;
         width: 76rem;
-        margin: 0px -8rem;
+        margin: 50px -8rem;
+        height: 53rem;
         
     }
-    .Pricing .blog .row .col-lg-3 button{
+    .Pricing .blog .row .col-lg-3 h4{
+        font-weight: bold;
+        font-size: 4rem;
+    }
+    .Pricing .blog .row .col-lg-3 .header{
+        margin: 50px 26rem;
+    }
+    .Pricing .blog .row .col-lg-3 .header span{
+        font-size: 3rem;
+    }.Pricing .blog .row .col-lg-3 .header span{
+        font-size: 3rem;
+    }
+    .Pricing .blog .row .col-lg-3 .header h2{
+        font-size: 7rem;
+    }
+    .Pricing .blog .row .col-lg-3 .header p{
+        font-size: 2rem;
+    }
+    .Pricing .blog .row .col-lg-3 h4{
         
+    }.Pricing .blog .row .col-lg-3 h6{
+        font-size: 2rem;
+        margin-top: 3rem;
+    }
+    .Pricing .blog .row .col-lg-3 button{
+        height: 5rem;
         width: 51rem;
     }
     /* contact section */
     .Contact{
         margin: 50px 100px;
+    }
+    .Contact h2{
+        font-size: 3rem;
+        margin: 0px 11rem;
+    }
+    .Contact p{
+        width: 30rem;
+        font-size: 1.5rem;
+        margin: 35px 11rem;
     }
     .Contact .blog{
         
@@ -706,32 +772,42 @@ footer p{
 
     }
     .Contact .blog .row .col-lg-4:nth-child(1){
-        border: 1px solid var(--dark-color);
+        border: 8px solid var(--dark-color);
         width: 68rem;
-        height: 15rem;
-        padding: 60px 6px;
+        height: 25rem;
+        padding: 46px 6px;
         margin: 31px -4rem;
     }
     .Contact .blog .row .col-lg-4:nth-child(2){
-        border: 1px solid var(--dark-color);
+        border: 8px solid var(--dark-color);
         width: 68rem;
-        height: 15rem;
-        padding: 60px 6px;
+        height: 25rem;
+        padding: 46px 6px;
         margin: 31px -4rem;
         
     }
     .Contact .blog .row .col-lg-4:nth-child(3){
-        border: 1px solid var(--dark-color);
+        border: 8px solid var(--dark-color);
         width: 68rem;
-        height: 15rem;
-        padding: 60px 6px;
+        height: 25rem;
+        padding: 46px 6px;
         margin: 31px -4rem;
-        
+    }
+    .Contact .blog .row .col-lg-4 span{
+        font-size: 7rem;
+    }
+    .Contact .blog .row .col-lg-4 h4{
+        font-size: 4rem;
+        font-weight: bold;
+    }
+    .Contact .blog .row .col-lg-4 p{
+        font-size: 2rem;
+        margin-left: 14rem;
     }
     .Contact .data{
         margin: 40px auto;
     }
-   
+
     
     .Contact .data .form{
         padding: 23px 0px;
