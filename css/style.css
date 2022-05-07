@@ -743,6 +743,12 @@ footer p{
         height: 5rem;
         width: 51rem;
     }
+
+    .Pricing .blog .row .col-lg-3 button p{
+        font-size: 3rem;
+        margin: -5px 8rem;
+        font-weight: bold;
+    }
     /* contact section */
     .Contact{
         margin: 50px 100px;
@@ -841,30 +847,43 @@ footer p{
         height: 45rem;
     }
     .Contact .data .form {
+        height: 30rem;
         width: 60rem;
         margin: 0px -137px;
         background-color: bisque;
     }
     .Contact .data .form form input:nth-child(1){
-        background-color: green;
+        padding-left: 2rem;
+        height: 5rem;
+        width: 26rem;
+        font-size: 1.5rem;
     }
     .Contact .data .form form input:nth-child(2){
-        background-color: blue;
+        padding-left: 2rem;
+        height: 5rem;
+        width: 26rem;
+        font-size: 1.5rem;
+        margin-left: -2rem;
     }
     .Contact .data .form form input:nth-child(3){
-        background-color: green;
-        width: 29rem; 
-        height: 40px;
+        width: 55.5rem;
+        font-size: 1.5rem;
+        padding-left: 2rem;
+        height: 5rem;
+
+        margin-left: 1px;
     }
     .Contact .data .form form input:nth-child(4){
-        background-color: yellow;
-        width: 29rem;
-        margin-top: 84px;
-        margin-left: -241px;
+        width: 55.5rem;
+        margin-top: 124px;
+        margin-left: -506px;
     }
     .Contact .data .form form button{
+        margin: 41px 14rem;
         width: 28rem;
+    
     }
+
 
     /* Join section */
 .join{
@@ -872,11 +891,22 @@ footer p{
     padding: 60px 0px;
     width: 65rem;
 }
+
+.join h3{
+    font-size: 3rem;
+}
+.join p{
+    font-size: 1.6rem;
+    margin-left: 1rem;
+}
 .join form input{
-    width: 15rem;
+    width: 33rem;
+    height: 4rem;
 }
 .join form button{
     background-color: var(--dark-color);
+    font-size: 2rem;
+
 }
 /* Network section */
 
