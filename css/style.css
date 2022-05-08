@@ -917,18 +917,25 @@ footer p{
 .network .row{
     
     display: grid;
-    grid-template-columns: 88% 83%;
+    grid-template-columns: 158% 139%;
     margin: 0px 4rem;
 }
 .network .row .col-lg-3{
     
-    margin: 0px 8rem;
-}
-.network{
-    
-    padding: 60px 0px;
+    margin: 0px -1rem;
 }
 
+.network .row .col-lg-3 h5{
+    font-size: 2rem;
+}
+.network .row .col-lg-3 p{
+    font-size: 1.5rem;
+    margin: 40px 0px;
+}
+.network .row .col-lg-3 .media img{
+    
+    
+}
 /* footer section  */
 
 footer{
