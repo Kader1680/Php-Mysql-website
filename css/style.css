@@ -652,14 +652,25 @@ footer p{
 
     }
     .galerie .carousel-inner{
-        
-
+        width: 63rem;
     }
     .galerie .carousel-inner .carousel-item{
 
     }
     .galerie .carousel-inner .carousel-item img{
 
+    }
+    .galerie .carousel-control-next{
+        
+    }
+    .galerie .carousel-control-next .visually{
+        
+    }
+    .galerie .carousel-control-prev .visually span{
+        margin-left: 4.5rem;
+    }
+    .galerie .carousel-control-next .visually span{
+        margin-left: 70rem;
     }
     /* team section */
     .team{
