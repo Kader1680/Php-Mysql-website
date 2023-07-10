@@ -12,25 +12,29 @@
 <h1 class=" text-center">Welcome To Pharm Aviv</h1>
 <section>
   
-  <h3>Here Your Medicament </h1>
+<div class="d-flex align-items-center">
+  <p><a class="btn bg-primary" href="/Php-Mysql-website/create.php">New Medicament </a></p>
+  <p><a href='/Php-Mysql-website/delete.php' class='ms-2 text-white bg-danger btn'>Delete All Medicament</a></p>
+</div>
   
   <div class="tbl-header">
     <table cellpadding="0" cellspacing="0" border="0">
       <thead>
         <tr>
-          <th>Id</th>
-          <th>Name</th>
-          <th>GENERIC</th>
-          <th>End Date</th>
-          <th>Arrangement</th>
-          <th>Action</th>
+          <th><h4>Id</h4></th>
+          <th><h4>Industry</h4></th>
+          <th><h4>Generic</h4></th>
+          <th><h4>Date</h4></th>
+          <th><h4>Autorisation</h4></th>
+          <th><h4>Action</h4></th>
+          
         </tr>
       </thead>
     </table>
   </div>
   <div class="tbl-content">
     <table cellpadding="0" cellspacing="0" border="0">
-      <tbody>
+      <tbody class="bg-white">
         <?php
 
             $server = "localhost";
@@ -49,7 +53,7 @@
                  
             // read data form table
 
-            $sql = "select * from Med_Table";
+            $sql = "select * from medicament";
             // excute query sql
             $result = $connection->query($sql);
             // check the query if excute or not
@@ -61,16 +65,17 @@
             
             while ($row = $result->fetch_assoc() ) {
                 echo  "<tr>
-                            <td>$row[ID]</td>
-                            <td>$row[NAME]</td>
-                            <td>$row[GENERIC]</td>
-                            <td>$row[END_DATE]</td>
-                            <td>
-                                <span class='rounded bg-success pt-1 pb-1 ps-2 pe-2'>accept</span>
-                            </td> 
+                            <td><h4 class='text-black'>$row[Id]</h4></td>
+                            <td><h4 class='text-black'>$row[Industry]</h4></td>
+                            <td><h4 class='text-black'>$row[Generic]</h4></td>
+                            <td><h4 class='text-black'>$row[Date]</h4></td>
+                            <td><h4 class='text-black'>$row[ind]</h4></td>
+                            <td><h4 class='text-black'>$row[Autorisation]</h4></td>
+                            
+                           
                             <td>
                                 <a class='text-white bg-warning btn btn-sm  pt-1 pb-1 ps-2 pe-2'>Edit</a>
-                                <a class='text-white bg-danger btn btn-sm  pt-1 pb-1 ps-2 pe-2'>Delete</a>
+                                <a href='/Php-Mysql-website/delete.php' class='text-white bg-danger btn btn-sm  pt-1 pb-1 ps-2 pe-2'>Delete</a>
                             </td>
                             
                         </tr>
@@ -80,20 +85,7 @@
 
         ?>
         
-        <!-- <tr>
-            <td>AAC</td>
-            <td>AUSTRALIAN COMPANY </td>
-            <td>$1.38</td>
-            <td>+2.01</td>
-            <td>
-                
-            </td> 
-            <td>
-                <a class="btn btn-sm bg-white">Edit</a>
-                <a class="btn btn-sm bg-white">Delete</a>
-            </td>
-        </tr>
-         -->
+       
         
       
         
