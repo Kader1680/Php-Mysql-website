@@ -1,15 +1,14 @@
 <?php
-include './connection.php';
-include './index.php';
+    include './index.php';
+    include './connection.php';
 
 
-if (isset($_GET["id "])) {
-    $ind = $_GET["id "];
-    $sql = 'DELETE FROM medicament WHERE id = $id ';
+
+if (isset($_GET["Id "])) {
+    $id = $_GET["Id "];
+    $sql = 'DELETE FROM medicament WHERE Id = $id ';
     $result = $connection->query($sql);
-    if (!$result) {
-        $errormessage = "erroe". $connection->error;
-    }
+    
 }
 
 

@@ -21,11 +21,9 @@
   }
 </style>
 <body>
-<form class="container" method="POST">
-  <!-- make hidden input that store id of client -->
-  <?php 
+
+<?php 
   include './connection.php';
-  $Id="";
   $Industry = "";
   $Generic = "";
   $Date = "";
@@ -33,11 +31,14 @@
   $sucesss = "";
   $fail = "";
   if ($_SERVER['REQUEST_METHOD'] == 'GET') {
+   
     // GET methods show the data of the client 
 
     // read the data of client from database
+    $Id="";
+
     $Id = $_GET["Id"];
-    $sql = "SELECT * FROM medicament WHERE Id = $Id ";
+    $sql = "SELECT * FROM medicament WHERE Id = '$Id' ";
     $result = $connection->query($sql);
     $row = $result->fetch_assoc();
     // check the query if excute or not
@@ -45,11 +46,11 @@
         die ('not table'.$connection->$error);
         }
     
-        $Id=$row["Id"];
-        $Industry = $row["Industry"];
-        $Generic = $row["Generic"];
-        $Date = $row["Date"];
-        $Autorisation = $row["Autorisation"];
+    // $Id=$row["Id"];
+    // $Industry = $row["Industry"];
+    // $Generic = $row["Generic"];
+    // $Date = $row["Date"];
+    // $Autorisation = $row["Autorisation"];
     
 
 }else {
@@ -96,6 +97,9 @@
   
   ?>
 
+<form class="container" method="post">
+  <!-- make hidden input that store id of client -->
+  
 
   <input type="hidden" value="<?php echo $Id ; ?>" />
 

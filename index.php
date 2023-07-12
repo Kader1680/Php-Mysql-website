@@ -5,15 +5,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Traid</title>
     <link rel="icon" href="./img/logo.png">
-
     <link rel="stylesheet" href="./style/style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+    <style>
+      .head{
+          text-align: center;  
+      }
+      .head div{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 2rem;
+        }
+      .head div img{
+          width: 70px;
+      }
+    </style>
+    
 </head>
 <body>
-<h1 class=" text-center">Welcome To Traid</h1><img src="/img/logo.png" alt="">
-<h4 class=" text-center">Best to Stock Medicament</h4>
-<input type="hidden">
+
+<div class="head">
+    <div>
+      <h1><img src="./img/logo.png" alt="">Welcome To Traid</h1>
+    </div>
+    <h4 >Best to Stock Medicament</h4>
+</div>
+
 <section>
   
 <div class="d-flex align-items-center">
@@ -25,13 +44,12 @@
     <table cellpadding="0" cellspacing="0" border="0">
       <thead>
         <tr>
-          <th><h4>Id</h4></th>
-          <th><h4>Industry</h4></th>
-          <th><h4>Generic</h4></th>
-          <th><h4>Date</h4></th>
-          <th><h4>Autorisation</h4></th>
-          <th><h4>Action</h4></th>
-          
+          <th><h6>Id</h6></th>
+          <th><h6>Industry</h6></th>
+          <th><h6>Generic</h6></th>
+          <th><h6>Expiration Date</h6></th>
+          <th><h6>Autorisation</h6></th>
+          <th><h6>Action</h6></th>
         </tr>
       </thead>
     </table>
@@ -64,7 +82,6 @@
             if (!$result) {
                 die ('not table'.$connection->error);
             }
-
             // read data form table using while loop
             
             while ($row = $result->fetch_assoc() ) {
@@ -73,14 +90,10 @@
                             <td><h4 class='text-black'>$row[Industry]</h4></td>
                             <td><h4 class='text-black'>$row[Generic]</h4></td>
                             <td><h4 class='text-black'>$row[Date]</h4></td>
-                            <td><h4 class='text-black'>$row[Autorisation]</h4></td>
-                            
-                           
+                            <td><h4 class='text-black'>$row[Autorisation]</h4></td>           
                             <td>
-                                <a href='/Php-Mysql-website/edit.php' class='text-white bg-warning btn btn-sm  pt-1 pb-1 ps-2 pe-2'>Edit</a>
-                                <a href='/Php-Mysql-website/deletal.php' class='text-white bg-danger btn btn-sm  pt-1 pb-1 ps-2 pe-2'>Delete</a>
+                                <a href='/Php-Mysql-website/delete.php' class='text-white bg-danger btn btn-sm  pt-1 pb-1 ps-2 pe-2'>Delete</a>
                             </td>
-                            
                         </tr>
                         ";
             }

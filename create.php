@@ -75,9 +75,30 @@ include './connection.php';
   .btn-close{
     color: white;
   }
+  .head{
+      margin-top: 2rem;
+  }
+  .head{
+          text-align: center;  
+      }
+  .head div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+    }
+    .head div img{
+        width: 70px;
+    }
 </style>
 <body>
-
+<div class="head">
+    <div>
+      <h1><img src="./img/logo.png" alt="">Welcome To Traid</h1>
+    </div>
+    <h4 >Best to Stock Medicament</h4>
+</div>
+<div class="title text-center" >Add   New Medicament</div>
 
 <form class="container" method="POST">
   <?php 
@@ -143,7 +164,7 @@ include './connection.php';
  
   <!-- <button type="submit" class="btn btn-primary"><input target="_parent" type="submit" class="text-white text-decoration-none" />Create</button> -->
   <input  target="_parent" type="submit" class="btn bg-primary text-white text-decoration-none" />
-  <button type="submit" class="btn btn-danger"><a class="text-white text-decoration-none" href="/Php-Mysql-website">Cancel</a></button>
+  <button type="submit" class="btn btn-danger"><a class="text-white text-decoration-none" href="/Php-Mysql-website">Back To Home Page</a></button>
 </form>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
 </body>
