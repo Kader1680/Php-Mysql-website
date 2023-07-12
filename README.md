@@ -29,5 +29,7 @@
 #Screenshot About Project
 
 <img src="./img/screencapture-localhost-Php-Mysql-website-2023-07-12-18_54_32.png"/>
+<img src="./img/screencapture-localhost-Php-Mysql-website-create-php-2023-07-12-18_54_48.png"/>
+<img src="./img/screencapture-localhost-Php-Mysql-website-deletal-php-2023-07-12-18_55_09.png/>
 
 
