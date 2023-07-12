@@ -1,59 +1,3 @@
-<?php
-include './connection.php';
-  $Industry = "";
-  $Generic = "";
-  $Date = "";
-  $Autorisation = "";
-  $sucesss = "";
-  $fail = "";
-  // if the request using get methods
-  if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-    
-    // GET methods show the data of the client 
-    $Industry = $_POST["industry"];
-    $Generic = $_POST["generic"];
-    $Date = $_POST["date"];
-    $Autorisation = $_POST["Autorisation"];
-    do {
-        // chek if you have empty feild
-        if (empty($Industry) | empty($Generic) | empty($Date) | empty($Autorisation)) {
-          
-          $fail = 'All fail are requiered';
-          break;
-        }
-        
-
-        $sql = "INSERT INTO medicament (Industry, Generic, Date, Autorisation)". 
-        "VALUES ('$Industry', '$Generic', '$Date', '$Autorisation')";
-
-        $result = $connection->query($sql);
-                // check the query if excute or not
-                if (!$result) {
-                    die ('not table'.$connection->$error);
-        }
-        // $sucesss = "succeful add a new medicamen"; 
-   
-    } while (false);
-
-  //   do {
-  //     if (!empty($Industry) | !empty($Generic) | !empty($Date) | !empty($Autorisation)) {
-        
-  //       $sucesss = 'sucesss to adding';
-  //       break;
-  //     }
-
-      
-  // } while (true);
-  
-
-    
-
-  }
-
-?>
-
-
-
 
 <!DOCTYPE html>
 <html lang="en">
@@ -65,7 +9,7 @@ include './connection.php';
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Create New Medicament</title>
+    <title>Edit Last Medicament</title>
 </head>
 <style>
   .fail{
@@ -77,10 +21,54 @@ include './connection.php';
   }
 </style>
 <body>
-
-
 <form class="container" method="POST">
+  <!-- make hidden input that store id of client -->
   <?php 
+  include './connection.php';
+  $Id="";
+  $Industry = "";
+  $Generic = "";
+  $Date = "";
+  $Autorisation = "";
+  $sucesss = "";
+  $fail = "";
+  if ($_SERVER['REQUEST_METHOD'] == 'GET') {
+    // GET methods show the data of the client 
+
+    // read the data of client from database
+    $Id = $_GET["Id"];
+    $sql = "SELECT * FROM medicament WHERE Id = $Id ";
+    $result = $connection->query($sql);
+    $row = $result->fetch_assoc();
+    // check the query if excute or not
+    if (!$result) {
+        die ('not table'.$connection->$error);
+        }
+    
+        $Id=$row["Id"];
+        $Industry = $row["Industry"];
+        $Generic = $row["Generic"];
+        $Date = $row["Date"];
+        $Autorisation = $row["Autorisation"];
+    
+
+}else {
+    // POST METHOD THAT UPDATE DATA OF THE MEDICAMENT
+    $Id = $_POST["Id"];
+    $Industry = $_POST["industry"];
+    $Generic = $_POST["generic"];
+    $Date = $_POST["date"];
+    $Autorisation = $_POST["Autorisation"];
+    
+    do {
+        $sql = "UPDATE medicament ". "SET Industry = '$Industry'";
+        $result = $connection->query($sql);
+                // check the query if excute or not
+                if (!$result) {
+                    die ('not table'.$connection->$error);
+        }
+    } while (false);
+}
      if (!empty($fail)) {
 
       // !empty(fail) => mean you have error message in variable
@@ -109,20 +97,21 @@ include './connection.php';
   ?>
 
 
+  <input type="hidden" value="<?php echo $Id ; ?>" />
 
   <div class="mb-3">
     <label for="Industry" class="form-label">Industry</label>
-    <input name="industry" type="text" class="form-control">
+    <input value="<?php echo $Industry ; ?>" name="industry" type="text" class="form-control">
   </div>
 
   <div class="mb-3">
     <label for="Generic" class="form-label">Generic</label>
-    <input name="generic" type="text" class="form-control" >
+    <input value="<?php echo $Generic ; ?>" name="generic" type="text" class="form-control" >
   </div>
 
   <div class="mb-3">
     <label for="Date" class="form-label">Date</label>
-    <input name="date" type="text" class="form-control" >
+    <input value="<?php echo $Date ; ?>" name="date" type="text" class="form-control" >
   </div>
 
   <!-- <div class="mb-3">
